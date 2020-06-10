@@ -72,4 +72,20 @@ body{
     }
     
 }
+@media only screen and (max-width:365px){
+    .icon1{
+        margin-top: 154px;
+        margin-left: 0px;
+    }
+    .icon2{
+        margin-top: 240px;
+        margin-left: -25px;
+    }
+    .naam{
+        font-size: 40px;
+    }
+    .name{
+        height: 180px;
+    }
+}
 
