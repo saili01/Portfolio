@@ -75,26 +75,42 @@
     <div class="collapse" id="home">
         <div class="p-4 text-white bg-success">
             <h2>About Me</h2>
-            <div class="d-flex flex-row text-center text-white about">
-                <div class="p-3 font-div1">
-                    <div><img src="img/lightbulb-on-outline.png" class="d-block" style="width:25%;height:25%;margin: auto">
-                        <label class="font-weight-bold" style="margin-top: 5px;font-size:22px">Intuitive</label>
-                        <div class="font-weight-bold" style="font-size: 18px">Strong preference for easy to use, intuitive UX/UI.</div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/p8.png" alt="Los Angeles" width="1062" height="50" id="slider">
+                      <div class="carousel-caption">
+                        <h2 class="cap">Intuitive</h2>
+                        <p class="intro" >Strong preference for easy to use, intuitive UX/UI.</p>
+                      </div>
                     </div>
-                </div>
-                <div class="p-3 font-div1">
-                    <div><img src="img/speedometer.png" class="d-block" style="width: 25%;height: 25%;margin: auto">
-                        <label class="font-weight-bold" style="margin-top: 5px;font-size:22px">Fast</label>
-                        <div class="font-weight-bold" style="font-size: 18px">Fast load times and lag free interaction, my highest priority.</div>
+                    <div class="carousel-item">
+                        <img src="img/p8.png" alt="Chicago" width="1062" height="50" id="slider">
+                        <div class="carousel-caption">
+                          <h2 class="cap">Fast</h2>
+                          <p  class="intro" >Fast load times and lag free interaction, my highest priority.</p>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="img/p8.png" alt="New York" width="1062" height="50" id="slider">
+                        <div class="carousel-caption">
+                          <h2 class="cap">Dynamic</h2>
+                          <p class="intro" >Websites don't have to be static, I love making pages come to life.</p>
+                        </div>
+                    </div> 
                 </div>
-                <div class="p-3 font-div1">
-                    <div><img src="img/rocket-launch.png" class="d-block" style="width: 25%;height: 25%;margin:auto">
-                        <label class="font-weight-bold" style="margin-top: 5px;font-size:22px" >Dynamic</label>
-                        <div class="font-weight-bold" style="font-size: 18px">Websites don't have to be static, I love making pages come to life.</div>
-                    </div>
-                </div>
-            </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+    </div>
         </div>
             
         
@@ -118,12 +134,17 @@
 
             <h4>JavaScript</h4>
             <div class="progress mb-4">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:95%"></div>
+            </div>
+
+            <h4>TypeScript</h4>
+            <div class="progress mb-4">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"></div>
             </div>
 
             <h4>jQuery</h4>
             <div class="progress mb-4">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
             </div>
 
             <h4>Express JS</h4>
@@ -135,7 +156,11 @@
             <div class="progress mb-4">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"></div>
             </div>
-        
+            
+            <h4>Responsive Web Design</h4>
+            <div class="progress mb-4">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
+            </div>
         
         </div>
     </div>
@@ -267,5 +292,13 @@
            $('.collapse').collapse('hide');
      });
     </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 3000
+      })
+    });
+  </script>
 </body>
 </html>
